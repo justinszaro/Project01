@@ -21,10 +21,10 @@ public class Tribe
         tribeLifePoints = lifePoints;
         for(int i = 0; i < 2; i++)
             if(i % 2 == 0)
-                members.add(new People(nationName, tribeName, PeopleType.warrior, tribeLifePoints / 3));
+                members.add(new People(nationName, tribeName, PeopleType.warrior, tribeLifePoints / 5));
             else
-                members.add(new People(nationName, tribeName, PeopleType.wizzard, tribeLifePoints / 3));
-                members.add(new People(nationName, tribeName, PeopleType.cleric, tribeLifePoints / 3));
+                members.add(new People(nationName, tribeName, PeopleType.wizzard, tribeLifePoints / 5));
+                members.add(new People(nationName, tribeName, PeopleType.cleric, tribeLifePoints / 5));
         for(int i = 0; i < members.size(); i++)
             livingMembers.addAll(members);
     }
