@@ -24,7 +24,6 @@ public class Nation
         for(int i = 0; i < 3; i++)
         {
             this.tribes.add(new Tribe(nationName, "Tribe" + i, nationLifePoints / 5));
-            this.tribes.add(new Tribe(nationName, "Max's Tribe # " + i, nationLifePoints / 5));
         }
         population.addAll(getNationPopulation());
         livingPopulation.addAll(population);
@@ -44,9 +43,7 @@ public class Nation
         {
             if(tribes.get(tribe).isTribeAlive())
             {
-                //System.out.println(tribes.get(tribe));
                 livingPopulation.addAll(tribes.get(tribe).getLivingTribeMembers());
-                //System.out.println(tribes.get(tribe).getLivingTribeMembers());
                 nationLifePoints += tribes.get(tribe).getTribeLifePoints();
             }
         }

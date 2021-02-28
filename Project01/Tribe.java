@@ -21,7 +21,7 @@ public class Tribe
         tribeLifePoints = lifePoints;
         for(int i = 0; i < 3; i++) {
             if (i == 0) {
-                members.add(new People(nationName, tribeName, PeopleType.warrior, tribeLifePoints / 3));
+                members.add(new People(nationName, tribeName, PeopleType.warrior, (tribeLifePoints / 3)));
             }
             else if (i == 1) {
                 members.add(new People(nationName, tribeName, PeopleType.wizzard, tribeLifePoints / 3));
@@ -44,22 +44,18 @@ public class Tribe
             {
                 livingMembers.add(members.get(person));
                 tribeLifePoints += members.get(person).getLifePoints();
-                //System.out.println(members.get(person));
             }
         }
-        //System.out.println(livingMembers);
         return livingMembers;
     }
-    /*
+
     public void printMembers()
     {
         for(int i = 0; i < 2; i++)
         {
-            System.out.println(people.get(i));
+            System.out.println(members.get(i));
         }
     }
-*/
-
 
     public int getTribeSize()
     {
@@ -70,7 +66,6 @@ public class Tribe
     {
         return (tribeLifePoints > 0);
     }
-
 
     public int getTribeLifePoints()
     {

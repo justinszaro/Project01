@@ -22,11 +22,7 @@ public class PlayGame
     {
         // add all living people to world list
         worldLivingPopulation.clear();
-        //System.out.println(allLivingNations);
-        for(int nation = 0; nation < nations.size(); nation++)
-            //System.out.println(nations.get(nation));
-            worldLivingPopulation.addAll(nations.get(nation).getNationPopulation());
-        //System.out.println(worldLivingPopulation);
+        for (Nation nation : nations) worldLivingPopulation.addAll(nation.getNationPopulation());
     }
 
 
@@ -34,14 +30,11 @@ public class PlayGame
     {
         getWorldLivingPopulation(nations);
         allLivingNations.clear();
-        for(int nation = 0; nation < nations.size(); nation++)
-        {
-            if(nations.get(nation).isNationAlive())
-            {
-                allLivingNations.add(nations.get(nation));
+        for (Nation nation : nations) {
+            if (nation.isNationAlive()) {
+                allLivingNations.add(nation);
             }
         }
-        //System.out.print(allLivingNations);
     }
 
 
@@ -50,6 +43,7 @@ public class PlayGame
         // need to fix this to take strategies into account.
         if(p1.getNation() != p2.getNation())
         {
+            p1.encounterStrategy(p2);
             System.out.print(p1 + " encounters " + p2);
             int p1Damage = (int) (generator.nextFloat() * generator.nextInt(20));
             int p2Damage = (int) (generator.nextFloat() * generator.nextInt(20));

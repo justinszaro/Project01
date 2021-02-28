@@ -48,7 +48,7 @@ public class People
 
     public void encounterStrategy(People otherPerson)
     {
-        if(myNation == otherPerson.getNation())
+        if(myNation != otherPerson.getNation())
         {
             // There will be an ugly confrontation
             // Groups attack groups. Group can be an individual or several individuals from any set of tribes
