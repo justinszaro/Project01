@@ -21,8 +21,9 @@ public class Main {
 	   nations.add(new Nation("Max's Nation",(gameLifePoints /5)));
        nations.add(new Nation("Elizabeth's Nation",(gameLifePoints /5)));
        nations.add(new Nation("Justin's Nation", (gameLifePoints/5)));
+        nations.add(new Nation("Tanishq's Nation", (gameLifePoints/5)));
 
-	   // could add and delete nations. return number of nations + 1 from add and number of nations -1 from remove.
+        // could add and delete nations. return number of nations + 1 from add and number of nations -1 from remove.
 	   for(int i = 0; i < 40; i++)
        {
            System.out.println("Round number: " + i);
