@@ -10,7 +10,13 @@ import Project01.PlayGame;
 
 public class Main {
 
-
+    /**
+     * Gives gameLifePoints=2000.
+     * Creates Nations that can be played in-game.
+     * Goes through rounds with the amount of nations that are created.
+     * Prints the winning nation after game (if any).
+     * @param args An array of strings.
+     */
     public static void main(String[] args)
     {
        int gameLifePoints = 2000;
