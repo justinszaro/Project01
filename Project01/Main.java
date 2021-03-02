@@ -16,12 +16,10 @@ public class Main {
        int gameLifePoints = 2000;
        ArrayList<Nation> nations = new ArrayList<>() ; // nations create tribes create people
        PlayGame game = new PlayGame();
-	   nations.add(new Nation("Idiots", (gameLifePoints / 5)));
-	   nations.add(new Nation("Minions", (gameLifePoints) / 5));
-	   nations.add(new Nation("Max's Nation",(gameLifePoints /5)));
-       nations.add(new Nation("Elizabeth's Nation",(gameLifePoints /5)));
-       nations.add(new Nation("Justin's Nation", (gameLifePoints/5)));
-        nations.add(new Nation("Tanishq's Nation", (gameLifePoints/5)));
+	   nations.add(new Nation("Max's Nation",(gameLifePoints /4)));
+       nations.add(new Nation("Elizabeth's Nation",(gameLifePoints /4)));
+       nations.add(new Nation("Justin's Nation", (gameLifePoints/4)));
+       nations.add(new Nation("Tanishq's Nation", (gameLifePoints/4)));
 
         // could add and delete nations. return number of nations + 1 from add and number of nations -1 from remove.
 	   for(int i = 0; i < 40; i++)
