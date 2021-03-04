@@ -9,7 +9,7 @@ public class PlayGame
 {
 
     ArrayList<Nation> allLivingNations = new ArrayList<>();
-    ArrayList<People> worldLivingPopulation = new ArrayList<>();
+    ArrayList<Project01.People> worldLivingPopulation = new ArrayList<>();
     Random generator;
 
     public PlayGame()
@@ -18,6 +18,10 @@ public class PlayGame
         generator = new Random(seed.getTime());
     }
 
+    /**
+     * Adds all People of all types per nation and tribe to world ArrayList
+     * @param nations
+     */
     public void getWorldLivingPopulation(ArrayList<Nation> nations)
     {
         // add all living people to world list
@@ -25,7 +29,10 @@ public class PlayGame
         for (Nation nation : nations) worldLivingPopulation.addAll(nation.getNationPopulation());
     }
 
-
+    /**
+     * Checks to see what nation(s) are still alive
+     * @param nations
+     */
     public void getAllLivingNations(ArrayList<Nation> nations)
     {
         getWorldLivingPopulation(nations);
@@ -37,8 +44,13 @@ public class PlayGame
         }
     }
 
-
-    public void encounter(People p1, People p2)
+    /**
+     * This is the turn where P1 attacks P2 in the turn
+     * Rolls random amount of damage on P2
+     * @param p1
+     * @param p2
+     */
+    public void encounter(Project01.People p1, Project01.People p2)
     {
         // need to fix this to take strategies into account.
         if(p1.getNation() != p2.getNation())
@@ -55,8 +67,12 @@ public class PlayGame
     }
 
 
-
-
+    /**
+     * Goes through one round of the game
+     * Returns all living nations
+     * @param nations
+     * @return
+     */
     public Boolean playOneRound(ArrayList<Nation> nations)
     {
         getAllLivingNations(nations);
@@ -82,7 +98,11 @@ public class PlayGame
 
     }
 
-
+    /**
+     * Shows who won the game
+     * If there is a game winner
+     * @return
+     */
     public String getWinner()
     {
         if (allLivingNations.size() == 0)
