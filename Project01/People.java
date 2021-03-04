@@ -2,6 +2,13 @@ package Project01;
 
 import Project01.PeopleType;
 
+/**
+ * Description
+ *
+ * @author Max Schuman, Elizabeth Vicente, Tanishq Iyer, Justin Szaro
+ * @version 1.0
+ * @since 2021-03-04
+ */
 public class People
 {
     private String personName;

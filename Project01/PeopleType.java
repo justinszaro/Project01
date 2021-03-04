@@ -1,6 +1,12 @@
 package Project01;
 
-
+/**
+ * Description
+ *
+ * @author Max Schuman, Elizabeth Vicente, Tanishq Iyer, Justin Szaro
+ * @version 1.0
+ * @since 2021-03-04
+ */
 public enum PeopleType
 {
     warrior ("Solder"),

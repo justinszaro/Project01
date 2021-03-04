@@ -6,6 +6,13 @@ import java.util.ArrayList;
 import Project01.People;
 import Project01.PeopleType;
 
+/**
+ * Description
+ *
+ * @author Max Schuman, Elizabeth Vicente, Tanishq Iyer, Justin Szaro
+ * @version 1.0
+ * @since 2021-03-04
+ */
 public class Tribe
 {
     private String nationName;

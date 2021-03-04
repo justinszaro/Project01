@@ -6,6 +6,14 @@ import java.util.ArrayList;
 import Project01.Tribe;
 import Project01.People;
 
+
+/**
+ * Description
+ *
+ * @author Max Schuman, Elizabeth Vicente, Tanishq Iyer, Justin Szaro
+ * @version 1.0
+ * @since 2021-03-04
+ */
 public class Nation
 {
     private int nationLifePoints;

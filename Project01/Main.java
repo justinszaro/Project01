@@ -7,7 +7,13 @@ import Project01.Nation;
 import Project01.Tribe;
 import Project01.PlayGame;
 
-
+/**
+ * Description
+ *
+ * @author Max Schuman, Elizabeth Vicente, Tanishq Iyer, Justin Szaro
+ * @version 1.0
+ * @since 2021-03-04
+ */
 public class Main {
 
     /**
