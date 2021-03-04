@@ -1,16 +1,17 @@
 package Project01;
 
 /**
- * Description
+ * This class sets the description for an instantiated Person in the People class based on its type.
+ * The class also includes the getter for a Person's description.
  *
  * @author Max Schuman, Elizabeth Vicente, Tanishq Iyer, Justin Szaro
- * @version 1.0
+ * @version 2.0
  * @since 2021-03-04
  */
 public enum PeopleType
 {
     warrior ("Solder"),
-    wizzard  ("Tricky"),
+    wizard("Tricky"),
     cleric  ("Healer");
 
 

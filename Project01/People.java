@@ -3,10 +3,14 @@ package Project01;
 import Project01.PeopleType;
 
 /**
- * Description
+ * The People class instantiates a new person and assigns its nation, tribe, Peopletype, gets its Description from
+ * PeopleType.java, and assigns the persons lifepoints. The class also includes getters for the Person's PeopleType,
+ * Tribe, Nation, and Lifepoints. The isPersonAlive() method checks to see if the persons lifepoints > 0 and the
+ * reduceLifePoints()  method reduces the person's Lifepoints. The toString() method outputs the current person's
+ * values. The encounterStategy method currently does nothing.
  *
  * @author Max Schuman, Elizabeth Vicente, Tanishq Iyer, Justin Szaro
- * @version 1.0
+ * @version 2.0
  * @since 2021-03-04
  */
 public class People
@@ -34,6 +38,7 @@ public class People
         me = person;
         myDescription = me.getDescription();
         myLifePoints = lifePoints;
+
     }
 
     /**

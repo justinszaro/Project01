@@ -1,16 +1,11 @@
 package Project01;
-import java.util.Collection;
-import java.util.Collections;
-import java.io.StringBufferInputStream;
 import java.util.ArrayList;
-import Project01.People;
-import Project01.PeopleType;
 
 /**
  * Description
  *
  * @author Max Schuman, Elizabeth Vicente, Tanishq Iyer, Justin Szaro
- * @version 1.0
+ * @version 2.0
  * @since 2021-03-04
  */
 public class Tribe
@@ -39,7 +34,7 @@ public class Tribe
                 members.add(new People(nationName, tribeName, PeopleType.warrior, (tribeLifePoints / 3)));
             }
             else if (i == 1) {
-                members.add(new People(nationName, tribeName, PeopleType.wizzard, tribeLifePoints / 3));
+                members.add(new People(nationName, tribeName, PeopleType.wizard, tribeLifePoints / 3));
             }
             else {
                 members.add(new People(nationName, tribeName, PeopleType.cleric, tribeLifePoints / 3));
