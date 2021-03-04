@@ -15,7 +15,12 @@ public class Nation
     private ArrayList<People> population = new ArrayList<>();
     private ArrayList<People> livingPopulation = new ArrayList<>();
 
-
+    /**
+     * Creates new 3 new tribes for every nation that is created
+     * Puts 3 people within each tribe
+     * @param name
+     * @param lifePoints
+     */
     public Nation(String name, int lifePoints)
     {
         nationCount++;
@@ -29,12 +34,19 @@ public class Nation
         livingPopulation.addAll(population);
     }
 
-
+    /**
+     * Checks if nation is alive with lifepoints greater than 0
+     * @return
+     */
     public Boolean isNationAlive()
     {
         return (nationLifePoints > 0);
     }
 
+    /**
+     * Finds the people in each tribe in each nation that are still alive
+     * @return
+     */
     public ArrayList<People> getNationPopulation()
     {
         nationLifePoints = 0;
@@ -56,7 +68,11 @@ public class Nation
         return nationName;
     }
 
-
+    /**
+     * Checks if Tribe is alive
+     * Checks if people in tribe are alive
+     * Prints the results if people are alive and if they are dead
+     */
     public void printTribesStatus()
     {
         for(int tribe = 0; tribe < 1; tribe++)
