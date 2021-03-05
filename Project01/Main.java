@@ -8,7 +8,7 @@ import Project01.Tribe;
 import Project01.PlayGame;
 
 /**
- * Description
+ * A new game, and nations are created here. We are able to play rounds using those nations. 
  *
  * @author Max Schuman, Elizabeth Vicente, Tanishq Iyer, Justin Szaro
  * @version 2.0

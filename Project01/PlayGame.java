@@ -7,6 +7,9 @@ import java.util.*;
 
 /**
  * Description
+ * This class acts as the game. We are able to get all the Nation's populations using getWorldLivingPopulation, as well as all the 
+ * current living nations. The encounter strategies are set here and the round is played in playOneRound. Once the game is over, the last living nation is 
+ * named the Winner
  *
  * @author Max Schuman, Elizabeth Vicente, Tanishq Iyer, Justin Szaro
  * @version 2.0

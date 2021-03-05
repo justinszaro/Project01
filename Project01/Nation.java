@@ -8,8 +8,11 @@ import Project01.People;
 
 
 /**
- * Description
- *
+ * Is called from Main. This class creates the Nations from main, and is able to pass that information to the Tribe class. 
+ * It checks the intended nations lifepoints to see if that are still alive in isNationAlive().
+ *GetNationPopulation will go through and check to see if the tribe is alive, if they are the number of memebers is added to a living 
+ population list and the nationslife points are also documented.
+  We can print the Tribes information, using getTribeName and getTribeSize in the printTribesStatus() function
  * @author Max Schuman, Elizabeth Vicente, Tanishq Iyer, Justin Szaro
  * @version 2.0
  * @since 2021-03-04

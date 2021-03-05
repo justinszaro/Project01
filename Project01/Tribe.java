@@ -2,7 +2,8 @@ package Project01;
 import java.util.ArrayList;
 
 /**
- * Description
+ * The Tribes are made here using the Nation class. Then the living tribe members can be found using getLivingTribeMembers, as well as 
+ * tribe size, tribe life points, tribe name and if they are alive. 
  *
  * @author Max Schuman, Elizabeth Vicente, Tanishq Iyer, Justin Szaro
  * @version 2.0
